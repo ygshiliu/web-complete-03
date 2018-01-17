@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>index.html</h1>
+	
+	<!-- 
+		什么是get请求？什么是post请求？
+		在html中，只有form标签的method属性为post时，发送的请求才是post请求，其它情况都是get请求
+		
+		像直接在浏览器中输入url发送请求、在页面中点击a标签及form标签中method属性为get时，发送的请求都是get请求
+	 -->
+	<form action="target.html" method="post">
+		用户名：<input type="text" name="username"><br><br>
+		密&nbsp;&nbsp;&nbsp;码：<input type="password" name="password"><br><br>
+		<input type="submit" value="提交">
+	</form>
+	
+</body>
+</html>

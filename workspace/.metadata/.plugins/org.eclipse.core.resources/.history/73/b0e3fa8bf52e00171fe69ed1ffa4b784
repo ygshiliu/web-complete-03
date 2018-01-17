@@ -1,0 +1,47 @@
+package com.atguigu.servlet;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.io.IOUtils;
+
+/**
+ * Servlet implementation class fileDownloadServlet
+ */
+public class fileDownloadServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		//获取servletContext
+		ServletContext context = getServletContext();
+		
+		//获取输入流
+		String path = context.getRealPath("/WEB-INF/download/憧憬.jpg");
+		FileInputStream in = new FileInputStream(path);
+		
+		//获取发送给浏览器的输出流
+		ServletOutputStream out = response.getOutputStream();
+		
+		//将文件输入流复制到浏览器的输出流中
+		IOUtils.copy(in, out);
+		
+		//关闭输入流
+		in.close();
+		
+		
+		
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}

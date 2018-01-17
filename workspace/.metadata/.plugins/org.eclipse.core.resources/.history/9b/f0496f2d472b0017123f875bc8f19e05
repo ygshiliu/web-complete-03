@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/18-web-ajax/js/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+	<h1>2.html</h1>
+	
+	<button id="btn01">Get</button>
+</body>
+</html>

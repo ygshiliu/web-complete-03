@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+
+	p{
+		/* 边框 */
+		border:solid 10px yellow;
+		/* 字体大小 */
+		font-size: 50px;
+	}

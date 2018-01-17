@@ -1,0 +1,19 @@
+package com.atguigu.junit;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+/**
+ * 描述：
+ * 开发者：Miss Wang
+ * 2017年4月27日 下午6:48:17
+ */
+public class GSonTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

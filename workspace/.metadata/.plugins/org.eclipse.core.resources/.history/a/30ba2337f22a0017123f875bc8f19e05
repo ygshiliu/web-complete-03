@@ -1,0 +1,30 @@
+package com.atguigu.listener;
+
+import javax.servlet.ServletRequestEvent;
+import javax.servlet.ServletRequestListener;
+
+/**
+ * 描述：
+ * 开发者：Miss Wang
+ * 2017年4月26日 下午5:40:42
+ */
+public class requestListener implements ServletRequestListener {
+	
+	public requestListener() {
+		// TODO Auto-generated constructor stub
+		System.out.println("requestListener实例化");
+	}
+
+	@Override
+	public void requestDestroyed(ServletRequestEvent sre) {
+		// TODO Auto-generated method stub
+		System.out.println("requestDestroyed销毁");
+	}
+
+	@Override
+	public void requestInitialized(ServletRequestEvent sre) {
+		// TODO Auto-generated method stub
+		System.out.println("requestInitialized初始化");
+	}
+
+}

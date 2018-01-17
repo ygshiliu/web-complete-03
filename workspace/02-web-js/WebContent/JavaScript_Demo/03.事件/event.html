@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>JS中的事件</title>
+</head>
+<body>
+	<!-- 方式1通过给标签指定事件属性来实现 -->
+	<!-- 这种方式结构与行为耦合，不推荐 -->
+	<!-- <button id="btnId" onclick="alert('Hello呀呀')">SayHello</button> -->
+	<button id="btnId">SayHello</button>
+	
+	<!-- 方式2通过js代码实现 -->
+	<script type="text/javascript">
+		var btn = document.getElementById("btnId");
+		btn.onclick = function(){
+			alert("通过js代码实现事件绑定");
+		}
+	
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,12 @@
+<classpath>
+  <container id="19-web-fileupload!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="C:/Users/Administrator/Desktop/Third/workspace/19-web-fileupload/WebContent/WEB-INF/lib/commons-io-2.4.jar">
+      <source-attachment-path>G:/课堂资料/JavaWEB课件/16_尚硅谷WEB技术之文件上传下载/lib/commons-io-2.4-src.zip</source-attachment-path>
+    </entry>
+  </container>
+  <container id="18-web-ajax!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="C:/Users/Administrator/Desktop/Third/workspace/18-web-ajax/WebContent/WEB-INF/lib/gson-2.2.4.jar">
+      <source-attachment-path>G:/课堂资料/JavaWEB课件/15_尚硅谷WEB技术之AJAX/gson-2.2.4-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

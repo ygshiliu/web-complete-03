@@ -1,0 +1,32 @@
+package com.atguigu.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class AjaxServlet
+ */
+public class AjaxServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//获取请求参数
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		
+		System.out.println("收到请求:"+username+"--"+password);
+		
+		response.setContentType("text/xml;charset=utf-8");
+		//返回响应
+		response.getWriter().print("<name>Jerry</name>");
+	}
+
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
+
+}

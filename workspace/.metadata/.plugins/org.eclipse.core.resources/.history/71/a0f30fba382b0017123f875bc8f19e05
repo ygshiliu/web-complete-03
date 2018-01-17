@@ -1,0 +1,31 @@
+package com.atguigu.junit;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.atguigu.bean.User;
+import com.google.gson.Gson;
+
+/**
+ * 描述：测试GSon
+ * 开发者：Miss Wang
+ * 2017年4月27日 下午6:48:17
+ */
+public class GSonTest {
+
+	@Test
+	public void test() {
+		
+		User user = new User("haha", 16, 54.0);
+		
+		//创建gSON对象
+		Gson gson = new Gson();
+		//将对象转成json字符串
+		String json = gson.toJson(user);
+		System.out.println(json);
+		
+		
+	}
+
+}

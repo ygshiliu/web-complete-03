@@ -1,0 +1,12 @@
+package com.atguigu.bean;
+
+import javax.servlet.http.HttpSessionBindingListener;
+
+/**
+ * 描述：
+ * 开发者：Miss Wang
+ * 2017年4月27日 下午2:00:57
+ */
+public class User implements HttpSessionBindingListener {
+
+}

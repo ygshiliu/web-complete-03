@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+The processing instruction target matching "[xX][mM][lL]" is not allowed.
+处理指令目标匹配"[xX][mM][lL]"是不允许的。
+ -->
+<students>
+	<student id="01">
+		<name>Tom</name>
+		<age>16</age>
+		<sex>男</sex>
+		<desc>未成年</desc>
+	</student>
+	<!-- 
+	Open quote is expected for attribute "id" associated with an element type "student".
+	公开报价预计属性"id"与元素关联的类型"student"。
+	<student id=02>
+	 -->
+	<student id="02">
+		<name>Lucy</name>
+		<age>18</age>
+		<sex>女</sex>
+		<!-- <desc>Lucy的年龄小于20岁</desc> -->
+		<!-- <desc>Lucy的年龄<20岁</desc> -->
+		<!-- <desc>Lucy的年龄&lt;20岁</desc> -->
+		<!-- CDATA告诉xml解析器不需要进行解析 -->
+		<desc><![CDATA[Lucy的年龄<20岁]]></desc>
+	</student>
+	<!-- 
+	The content of elements must consist of well-formed character data or markup.
+	元素的内容必须包含格式正确的字符数据或标记。
+	<01stu></01stu>
+	 -->
+	 <!-- 
+	 The end-tag for element type "stud" must end with a '>' delimiter.
+	 结束标记元素类型"stud"必须以'>'分隔符。	
+	 <stud>
+	  -->
+</students>
+<!-- 
+The markup in the document following the root element must be well-formed.
+以下根元素的文档中的标记必须是格式良好的。
+<students></students>
+ -->

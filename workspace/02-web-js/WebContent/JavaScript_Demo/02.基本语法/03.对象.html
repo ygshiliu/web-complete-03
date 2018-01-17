@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS中的对象</title>
+<script type="text/javascript">
+	//创建对象的两种方式
+	//第一种方式
+	var obj = new Object();
+	//第二种方式
+	var obj2 = {};
+	
+	//动态的向对象中添加属性:对象.属性 = 值 
+	obj.name = "宋智孝";
+	obj.age = 30;
+	obj.sex = '女';
+	
+	//获取对象的属性值 ：对象.属性
+	//alert(obj.name+"--"+obj.age+"--"+obj.sex);
+	
+	//在声明对象的同时定义属性
+	//js对象的属性是以键值对形式出现，键与值之间使用：号分隔，多个键值对之间使用，分隔，注意最后一个键值对不加，号
+	var obj3 = {
+			name:"haha",
+			age:16,
+			sex:"男"
+	}
+	alert(obj3.sex);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

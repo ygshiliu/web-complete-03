@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	
+	body {
+		background-color: #bfa;
+	}
+	
+	div{
+		width:100px;
+		height:260px;
+	}
+	
+	div.border{
+		border: 2px white solid;
+	}
+	
+	div.redDiv{
+	   background-color: red;  
+	}
+	
+	div.blackDiv{
+		background-color: black;
+	}
+	
+	
+	
+</style>
+
+<script type="text/javascript" src="script/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+	
+
+	$(function(){
+		
+		//选择要操作的div元素;
+		var $divEle = $('div:first');
+		
+		$('#btn01').click(function(){
+			//addClass() - 向被选元素添加一个或多个类 
+			//多个类名间使用空格分开
+			$divEle.addClass("redDiv blackDiv");
+		});
+		
+		$('#btn02').click(function(){
+			//removeClass() - 从被选元素删除一个或多个类 
+			//传入指定的样式，表示在当前元素上删除指定样式，可以传入多个样式，多个样式间使用空格
+			//$divEle.removeClass("blackDiv redDiv");
+			//不传值将删除元素上的所有样式
+			$divEle.removeClass();
+		});
+		
+		$('#btn03').click(function(){
+			//hasClass() - 检查被选元素是否包含指定的 class
+			//返回一个布尔值
+			var flag = $divEle.hasClass("blackDiv");
+			alert(flag);
+		});
+		
+		$('#btn04').click(function(){
+			//toggleClass() - 对被选元素进行添加/删除类的切换操作 
+			$divEle.toggleClass("redDiv");
+		});
+		
+		$('#btn05').click(function(){
+			//css() - 设置或返回样式属性
+			//传入一个属性名，返回属性的值 
+			//var val = $divEle.css("background-color");
+			//alert(val);
+			//传入一个属性名，一个属性值 ，用来设置元素属性的值
+			//$divEle.css("background-color","#111");
+			//可以传入 一个js对象，设置多个属性
+			$divEle.css({"background-color":"red","border":"solid 10px green"});
+			
+		});
+		
+		$('#btn06').click(function(){
+			//height() - 设置或返回匹配元素的高度。
+			//不传值，用来获取
+			//var height = $divEle.height();
+			//传值 ，用来设置元素指定的高度
+			$divEle.height(100);
+		});
+		
+		$('#btn07').click(function(){
+			//width() - 设置或返回匹配元素的宽度。
+			var width = $divEle.width(100);
+			console.log(width);
+		});
+		
+		$('#btn08').click(function(){
+			//offset() - 返回第一个匹配元素相对于文档的位置。
+			//返回一个对象，这个对象包括一个top属性和left属性
+			/* var obj = $divEle.offset();
+			console.log(obj); */
+			//可以传一个js对象来指定元素的位置，js对象中要包括top与left
+			$divEle.offset({left:200,top:50});
+		});
+		
+		$('#btn09').click(function(){
+			//hide() - 隐藏元素。
+			//可以传入一个毫秒值，来控制隐藏的状态
+			//$divEle.hide(200);
+			$divEle.hide("normal");
+		});
+		
+		$('#btn10').click(function(){
+			//show() - 显示元素。
+			$divEle.show("normal");
+		});
+		
+		$('#btn11').click(function(){
+			//toggle() - 切换元素显示状态。
+			$divEle.toggle();
+		});
+		
+	})
+</script>
+</head>
+<body>
+
+	<table align="center">
+		<tr>
+			<td>
+				<div class="border">
+				</div>
+			</td>
+			
+			<td>
+				<div class="btn">
+					<input type="button" value="addClass()" id="btn01"/>
+					<input type="button" value="removeClass()" id="btn02"/>
+					<input type="button" value="hasClass()" id="btn03"/>
+					<input type="button" value="toggleClass()" id="btn04"/>
+					<input type="button" value="css()" id="btn05"/>
+					<input type="button" value="height()" id="btn06"/>
+					<input type="button" value="width()" id="btn07"/>
+					<input type="button" value="offset()" id="btn08"/>
+					<input type="button" value="hide()" id="btn09"/>
+					<input type="button" value="show()" id="btn10"/>
+					<input type="button" value="toggle()" id="btn11"/>
+				</div>
+			</td>
+		</tr>
+	</table>
+	
+	
+	
+	<br /> <br />
+	
+	
+	<br /> <br />
+	
+	
+	
+</body>
+</html>

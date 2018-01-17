@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/18-web-ajax/js/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//获取按钮，绑定单击事件
+		$("#btn01").click(function(){
+			//$.get(url,[data],[fn],[type]) 
+			//url:指请求提交到服务器的url路径
+			//data:传递的请求参数,可以是一个键值对，也可以是一个js对象
+			//fn:响应就绪后调用的回调函数
+			//type:响应体的类型
+			/* var url = "/18-web-ajax/AjaxServlet";
+			var data = {username:"yiyi",password:78};
+			var fn = function(d){
+				//回调函数中需要定义一个变量用来接收服务返回的数据
+				alert(d);
+			};
+			var type = "text";
+			$.get(url,data,fn,type); */
+			
+			$.get("/18-web-ajax/AjaxServlet",{username:"yiyi",password:78},function(d){
+				//回调函数中需要定义一个变量用来接收服务返回的数据
+				alert(d.name);
+				/* var user = JSON.parse(d);
+				alert(user.name+"--"+user.age); */
+			},"json");
+		})
+		
+		$("#btn02").click(function(){
+			$.getJSON("/18-web-ajax/AjaxServlet",{username:"yiyi",password:78},function(d){
+				alert(d.name);
+			});
+		})
+		
+		$("#btn03").click(function(){
+			$.post("/18-web-ajax/AjaxServlet",{username:"yiyi",age:78},function(d){
+				alert(d.name);
+			});
+		})
+	})
+	
+</script>
+</head>
+<body>
+	<h1>2.html</h1>
+	
+	<button id="btn01">Get</button>
+	<button id="btn02">GetJSON</button>
+	<button id="btn03">Post</button>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>表单</title>
+</head>
+<body>
+
+	<!-- 使用form标签来创建一个表单 -->
+	<!-- 作用向服务器提交表单中的信息 -->
+	<!-- action：用来指向服务器处理表单信息的路径 -->
+	<!-- method：用来指定提交请求方式，有两个值get和post,默认是get -->
+	
+	<!-- 当我们点击提交按钮时，会以如下形式发送到服务器 -->
+	<!-- target.html?username=Tom&password=123 -->
+	<!-- 使用？来分隔url路径与表单信息，使用&来分隔表单信息，
+		每一个表单信息是一个键值对，由键和值组成，键就是我们指定的name属性值，值就是用户输入的信息，同时键值之间使用=号连接  -->
+	<form action="target.html" method="get">
+		<!-- 文本框 -->
+		姓名：<input type="text" name="username"><br><br>
+		<!-- 密码框 -->
+		密码：<input type="password" name="password"><br><br>
+		<!-- 单选按钮 -->
+		<!-- 单选按钮是通过name属性进行分组的，name属性值相同代表是一组 -->
+		<!-- 像这种需要用户来选择的表单项，我们需要指定它的value属性值 -->
+		性别：<input type="radio" name="sex" value="male">男
+		<input type="radio" name="sex" value="female">女<br><br>
+		<!-- 复选框 -->
+		<!-- 筛选框与单选框一样，也需要指定name属性与value属性 -->
+		爱好 ：<input type="checkbox" name="hobby" value="zq">足球
+		     <input type="checkbox" name="hobby" value="lq">篮球
+		     <input type="checkbox" name="hobby" value="ymq">羽毛球
+		     <input type="checkbox" name="hobby" value="pqq">乒乓球<br><br>
+		 
+		 <!-- 下拉列表框 -->
+		 <!-- 下拉列表框也需要指定name与value属性，且name属性写在select标签中，而value属性写在option子标签中 -->
+		 你喜欢的语言：
+		 <select name="language">
+		 	<option value="C">C</option>
+		 	<option value="java">Java</option>
+		 	<option value="php">php</option>
+		 	<option value="js">javaScript</option>
+		 </select><br><br>
+		     
+		<!-- 提交按钮 -->
+		<input type="submit" >
+	</form>
+
+
+</body>
+</html>

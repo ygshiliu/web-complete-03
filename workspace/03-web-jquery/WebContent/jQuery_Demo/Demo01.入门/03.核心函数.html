@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>核心函数</title>
+<script type="text/javascript" src="../script/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+	//$是jQuery的核心函数，可以根据传入参数的不同起不同作用
+	//核心函数的4个作用
+	//传入参数为[函数]时：在文档加载完成后执行这个函数
+	//相当于window.onload
+	$(function(){
+		//传入参数为[HTML字符串]时：根据这个字符串创建元素节点对象
+		$("<p>柳暗花明又一村</p>").appendTo("body");
+		//传入参数为[选择器字符串]时：根据这个字符串查找元素节点对象
+		//id选择器  类选择器 元素选择器 分组选择器
+		//var $div = $("#testDiv");
+		//alert($div);
+		
+		//Dom对象：就是使用原生 js 获取的对象，主要指通过document对象获取元素对象的三个方法
+		var div  = document.getElementById("testDiv");
+		//jQuery对象:是通过$,也就是核心函数获取的对象
+		var $div =$("#testDiv");
+		//alert(div+"--"+$div);
+		
+				
+		//传入参数为[DOM对象]时：将DOM对象包装为[jQuery对象]返回
+		var $div2 = $(div);
+		//alert($div2+"--"+$div);
+		
+		//为什么要将dom对象包装成jQuery对象？
+		//jQuery对象提供了很多很灵活的方法，而dom对象不能调用，反过来jQuery对象也不能调用dom对象的方法
+		//dom对象转换成jQuery对象：通过核心函数包装dom对象实现 
+		var $div3 = $(div);
+			
+		//jQuery对象转换成dom对象
+		//jQuery对象的本质就是一个Dom对象数组，可以通过对象[下标]的方法来获取指定位置的dom对象
+		var div3 = $div3[0];
+		alert(div3);
+	})
+
+</script>
+</head>
+<body>
+	
+	<div id="testDiv">Atguigu is Very Good!</div>
+	
+	<button id="dom2dom">使用DOM对象调用DOM方法</button>
+	<button id="dom2jQuery">使用DOM对象调用jQuery方法</button>
+	<button id="jQuery2jQuery">使用jQuery对象调用jQuery方法</button>
+	<button id="jQuery2dom">使用jQuery对象调用DOM方法</button>
+	
+</body>
+</html>

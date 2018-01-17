@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../../script/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+	
+	$(function(){
+		//点击#checkedAllBtn全选按钮，选中所有的复选框，包括全选全不选按钮
+		$("#checkedAllBtn").click(function(){
+			//attr()用于获取或设置元素的属性值
+			$(":checkbox").attr("checked",true);
+		})
+		//点击#checkedNoBtn全不选按钮，取消所有的复选框，包括全选全不选按钮
+		$("#checkedNoBtn").click(function(){
+			$(":checkbox").attr("checked",false);
+		})
+		//点击#checkedRevBtn反选按钮，选中的复选框取消，没选中的复选框选中，同时判断全选全不选按钮是选中还是取消选中状态
+		$("#checkedRevBtn").click(function(){
+			//对name=items设置状态
+			$("[name=items]").each(function(){
+				$(this).attr("checked",!this.checked);
+			})
+			//对全选全不选设置状态
+			$("#checkedAllBox").attr("checked",$("[name=items]:checked").length==4);
+		})
+		//点击#sendBtn提交按钮，遍历name=items复选框的value属性
+		$("#sendBtn").click(function(){
+			$("[name=items]:checked").each(function(){
+				alert($(this).val());
+			})
+			/* 			
+			val可以遍历，但每遍历完后同时也会重新设置元素的value属性值 
+			导致只能遍历一次，再次遍历显示空
+ 			$("[name=items]:checked").val(function(){
+				alert($(this).val());
+			}) */
+		})
+		//点击#checkedAllBox全选全不选操作
+		$("#checkedAllBox").click(function(){
+			//$("[name=items]").attr("checked",this.checked);
+			/* 
+			
+			alert(!$("#checkedAllBox").attr("checked"));
+			为什么通过以下方式设置元素checked属性需要使用两个！！？
+			因为在没有设置在情况下返回的是undefined 返回false
+			$("[name=items]").attr("checked",!$("#checkedAllBox").attr("checked")); */
+			alert(!$("#checkedAllBox").attr("checked"));
+			//$("[name=items]").attr("checked",!$("#checkedAllBox").attr("checked")); 
+		})
+		//点击单个name=items复选框操作
+		$("[name=items]").click(function(){
+			$("#checkedAllBox").attr("checked",$("[name=items]:checked").length==4);
+		})
+	});
+	
+</script>
+</head>
+<body>
+
+	<form method="post" action="">
+	
+		你爱好的运动是？<input type="checkbox" id="checkedAllBox" />全选/全不选 
+		
+		<br />
+		<input type="checkbox" name="items" value="足球" />足球
+		<input type="checkbox" name="items" value="篮球" />篮球
+		<input type="checkbox" name="items" value="羽毛球" />羽毛球
+		<input type="checkbox" name="items" value="乒乓球" />乒乓球
+		<br />
+		<input type="button" id="checkedAllBtn" value="全　选" />
+		<input type="button" id="checkedNoBtn" value="全不选" />
+		<input type="button" id="checkedRevBtn" value="反　选" />
+		<input type="button" id="sendBtn" value="提　交" />
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+package com.atguigu.listener;
+
+import javax.servlet.http.HttpSessionActivationListener;
+
+/**
+ * 描述：
+ * 开发者：Miss Wang
+ * 2017年4月27日 上午11:45:36
+ */
+public class MySessionAttrListener implements HttpSessionActivationListener {
+
+}

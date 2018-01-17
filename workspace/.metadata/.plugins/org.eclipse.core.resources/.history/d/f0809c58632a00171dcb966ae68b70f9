@@ -1,0 +1,29 @@
+package com.atguigu.listener;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+
+/**
+ * 描述：
+ * 开发者：Miss Wang
+ * 2017年4月26日 下午5:31:35
+ */
+public class IOCListener implements ServletContextListener {
+	
+	public IOCListener() {
+		System.out.println("IOCListener实例化");
+	}
+
+	@Override
+	public void contextInitialized(ServletContextEvent sce) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void contextDestroyed(ServletContextEvent sce) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

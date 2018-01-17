@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>index.html</h1>
+	
+	<a href="/19-web-filedownload/憧憬.jpg">下载图片</a>
+</body>
+</html>

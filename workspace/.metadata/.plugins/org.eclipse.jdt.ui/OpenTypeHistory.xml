@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=06-web-servlet/src&lt;com.atguigu.servlet{MyGenaricServlet.java[MyGenaricServlet" modifiers="1025" timestamp="1491980734322"/>
+<typeInfo handle="=bookstore_v02/src&lt;com.atguigu.dao.impl{UserDaoImpl.java[UserDaoImpl" modifiers="1" timestamp="1492150166120"/>
+<typeInfo handle="=bookstore_v02/src&lt;com.atguigu.service{UserService.java[UserService" modifiers="513" timestamp="1492151616433"/>
+<typeInfo handle="=bookstore_v05/src&lt;com.atguigu.dao{BookDao.java[BookDao" modifiers="513" timestamp="1492608008094"/>
+<typeInfo handle="=bookstore_v05/src&lt;com.atguigu.dao.impl{BookDaoImpl.java[BookDaoImpl" modifiers="1" timestamp="1492654821424"/>
+<typeInfo handle="=bookstore_v05/src&lt;com.atguigu.service{BookService.java[BookService" modifiers="513" timestamp="1492608241562"/>
+<typeInfo handle="=bookstore_v02/C:\/Users\/Administrator\/Desktop\/Third\/workspace\/bookstore_v02\/WebContent\/WEB-INF\/lib\/commons-dbutils-1.3.jar&lt;org.apache.commons.dbutils(ResultSetHandler.class[ResultSetHandler" modifiers="1537" timestamp="1492140843102"/>
+<typeInfo handle="=bookstore_v06/src&lt;com.atguigu.bean{Cart.java[Cart" modifiers="1" timestamp="1493018891455"/>
+<typeInfo handle="=bookstore_v05/src&lt;com.atguigu.dao{BaseDao.java[BaseDao" modifiers="1" timestamp="1492588102166"/>
+<typeInfo handle="=bookstore_v06/src&lt;com.atguigu.dao{OrderDao.java[OrderDao" modifiers="513" timestamp="1493034256306"/>
+<typeInfo handle="=bookstore_v06/src&lt;com.atguigu.dao.impl{OrderDaoImpl.java[OrderDaoImpl" modifiers="1" timestamp="1493043525254"/>
+<typeInfo handle="=bookstore_v06/src&lt;com.atguigu.dao{BaseDao.java[BaseDao" modifiers="1" timestamp="1493088472373"/>
+<typeInfo handle="=bookstore_v06/src&lt;com.atguigu.dao{OrderItemDao.java[OrderItemDao" modifiers="513" timestamp="1493087944467"/>
+<typeInfo handle="=bookstore_v06/src&lt;com.atguigu.dao.impl{OrderItemDaoImpl.java[OrderItemDaoImpl" modifiers="1" timestamp="1493088036084"/>
+<typeInfo handle="=16-web-filter/D:\/Program Files\/JDK\/jre\/lib\/rt.jar&lt;com.sun.org.apache.xalan.internal.xsltc.dom(Filter.class[Filter" modifiers="1537" timestamp="1467709889817"/>
+<typeInfo handle="=16-web-filter/D:\/Program Files\/apache-tomcat-6.0.47\/lib\/servlet-api.jar&lt;javax.servlet(Filter.class[Filter" modifiers="1537" timestamp="1476335392000"/>
+<typeInfo handle="=06-web-servlet/D:\/Program Files\/JDK\/jre\/lib\/rt.jar&lt;java.util.concurrent(ConcurrentHashMap.class[ConcurrentHashMap" modifiers="33" timestamp="1467709889817"/>
+<typeInfo handle="=06-web-servlet/D:\/Program Files\/JDK\/jre\/lib\/rt.jar&lt;java.lang(Thread.class[Thread" modifiers="33" timestamp="1467709889817"/>
+<typeInfo handle="=06-web-servlet/D:\/Program Files\/JDK\/jre\/lib\/rt.jar&lt;java.lang(ThreadLocal.class[ThreadLocal" modifiers="33" timestamp="1467709889817"/>
+<typeInfo handle="=17-web-listener/D:\/Program Files\/apache-tomcat-6.0.47\/lib\/servlet-api.jar&lt;javax.servlet(ServletContextListener.class[ServletContextListener" modifiers="1537" timestamp="1476335392000"/>
+<typeInfo handle="=17-web-listener/D:\/Program Files\/apache-tomcat-6.0.47\/lib\/servlet-api.jar&lt;javax.servlet.http(HttpSessionListener.class[HttpSessionListener" modifiers="1537" timestamp="1476335392000"/>
+<typeInfo handle="=06-web-servlet/D:\/Program Files\/apache-tomcat-6.0.47\/lib\/catalina.jar&lt;org.apache.catalina.connector(Request.class[Request" modifiers="33" timestamp="1476335392000"/>
+<typeInfo handle="=06-web-servlet/D:\/Program Files\/apache-tomcat-6.0.47\/lib\/servlet-api.jar&lt;javax.servlet.http(HttpSession.class[HttpSession" modifiers="1537" timestamp="1476335392000"/>
+<typeInfo handle="=17-web-listener/D:\/Program Files\/apache-tomcat-6.0.47\/lib\/servlet-api.jar&lt;javax.servlet.http(HttpSessionActivationListener.class[HttpSessionActivationListener" modifiers="1537" timestamp="1476335392000"/>
+<typeInfo handle="=06-web-servlet/D:\/Program Files\/apache-tomcat-6.0.47\/lib\/servlet-api.jar&lt;javax.servlet(ServletContextAttributeListener.class[ServletContextAttributeListener" modifiers="1537" timestamp="1476335392000"/>
+<typeInfo handle="=17-web-listener/D:\/Program Files\/apache-tomcat-6.0.47\/lib\/servlet-api.jar&lt;javax.servlet(ServletRequestListener.class[ServletRequestListener" modifiers="1537" timestamp="1476335392000"/>
+<typeInfo handle="=06-web-servlet/D:\/Program Files\/apache-tomcat-6.0.47\/lib\/servlet-api.jar&lt;javax.servlet(ServletRequestAttributeListener.class[ServletRequestAttributeListener" modifiers="1537" timestamp="1476335392000"/>
+<typeInfo handle="=17-web-listener/D:\/Program Files\/apache-tomcat-6.0.47\/lib\/servlet-api.jar&lt;javax.servlet.http(HttpSessionBindingListener.class[HttpSessionBindingListener" modifiers="1537" timestamp="1476335392000"/>
+<typeInfo handle="=17-web-listener/D:\/Program Files\/apache-tomcat-6.0.47\/lib\/servlet-api.jar&lt;javax.servlet.http(HttpSessionAttributeListener.class[HttpSessionAttributeListener" modifiers="1537" timestamp="1476335392000"/>
+<typeInfo handle="=06-web-servlet/D:\/Program Files\/JDK\/jre\/lib\/rt.jar&lt;java.lang(Object.class[Object" modifiers="33" timestamp="1467709889817"/>
+<typeInfo handle="=18-web-ajax/C:\/Users\/Administrator\/Desktop\/Third\/workspace\/18-web-ajax\/WebContent\/WEB-INF\/lib\/gson-2.2.4.jar&lt;com.google.gson.reflect(TypeToken.class[TypeToken" modifiers="33" timestamp="1493290101407"/>
+<typeInfo handle="=06-web-servlet/D:\/Program Files\/JDK\/jre\/lib\/rt.jar&lt;java.util(ResourceBundle.class[ResourceBundle" modifiers="1057" timestamp="1467709889817"/>
+</typeInfoHistroy>

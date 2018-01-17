@@ -1,0 +1,9 @@
+package com.atguigu.bean;
+/**
+ * 描述：
+ * 开发者：Miss Wang
+ * 2017年4月27日 下午6:49:56
+ */
+public class User {
+
+}

@@ -1,0 +1,17 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+/**
+ * 描述：
+ * 开发者：Miss Wang
+ * 2017年5月2日 下午8:37:30
+ */
+public class ResourceBundleTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

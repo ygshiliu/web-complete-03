@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS基本语法</title>
+<!-- 第2种：写在style标签中，而style标签通过是定义在head标签中 -->
+<!-- 此方式实现在当前页面中复用的效果，好于第1种方式 -->
+<style type="text/css">
+	
+	p{
+		/* 背景色 */
+		background-color:green;
+	}
+
+</style>
+<!-- 第3种方式：使用link标签引入一个外部的css文件 -->
+<!-- href属性用来指定要引入外部css样式文件的路径 -->
+<!-- 此方式最值得推荐，它可以实现多个页面的复用 -->
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<!-- 第1种：直接写在html标签的style属性中 -->
+	<!-- 这种方式结构与表现耦合，不推荐使用 -->
+	<p style="color:blue;">落霞与孤鹜齐飞，秋水共长天一色</p>
+	<p>落霞与孤鹜齐飞，秋水共长天一色</p>
+	
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>JS中的事件</title>
+	
+	<script type="text/javascript">
+		//浏览器在加载html文件时是从上到下读一行执行一行
+		//以后在head标签中操作js代码时，上来第一件事就是写上window.onload=function(){}
+		window.onload = function(){
+			var btn = document.getElementById("btnId");
+			//alert(btn);
+			btn.onclick = function(){
+				alert("通过js代码实现事件绑定");
+			} 
+			
+		}
+	
+	</script>
+</head>
+<body>
+	<button id="btnId">SayHello</button>
+	
+</body>
+</html>

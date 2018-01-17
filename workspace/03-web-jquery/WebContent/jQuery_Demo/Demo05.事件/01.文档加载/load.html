@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../../script/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+
+	//$(function()) 和  window.onload = function(){}的区别
+	//会在当前网页资源加载完成之后被触发
+	//网页资源包括外部资源，比如jQuery库、iframe引入的网页加载完成后
+	/* window.onload = function(){
+		alert("原生js实现！！");
+	} */
+	
+	//会在当前文档加载完成之后立刻被执行
+	$(function(){
+		alert("jQuery实现 ！");
+	})
+	
+	//$(function()) 的执行时机要早于  window.onload = function(){}
+</script>
+</head>
+<body>
+
+	<iframe src="http://www.baidu.com"></iframe>
+
+</body>
+</html>
